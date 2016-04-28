@@ -27,6 +27,7 @@ chrome.extension.sendRequest({reqtype: "get-settings"}, function(response) {
 		}
 		if (response.hidebody == 'true') {
 			styles += '.jS.kl, .jS .o6.aI, .rv .aI { /* message preview */ display: none !important; } ';
+			styles += '.jS.nN.kl { /* message preview */ display: block !important; } '; /* saved links: always show! */
 		}
 		if (response.hidereminder == 'true') {
 			styles += '.jS .tu { /* message add reminder */ display: none !important; } ';
